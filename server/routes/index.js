@@ -2,7 +2,7 @@ var express 			= require('express');
 var router 				= express.Router();
 const {Client} 			= require('pg');
 const path 				= require('path');
-const connectionString 	= process.env.DATABASE_URL || 'postgresql://postgres:jamil2009@localhost:5432/BALDEPRO';
+const connectionString 	= process.env.DATABASE_URL || 'postgresql://postgres:jamil2018@https://services.emi.u-bordeaux.fr/dbserver:5432/tbalde';
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
