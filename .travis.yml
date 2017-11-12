@@ -1,0 +1,8 @@
+langage: node_js
+deploy:
+  provider: heroku
+  api_key:
+    secure: "key"
+  app : website
+  skip_cleanup : true
+  strategy: git
