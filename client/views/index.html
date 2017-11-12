@@ -6,9 +6,9 @@
 	<title>Baldepro web site</title>
 
 	<!-- css -->
-	
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"/>
-	
+
 	<link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
 
 	<!-- fonts -->
@@ -18,11 +18,11 @@
 
 <!-- web site contain  -->
 
-<body ng-app ="app">	
+<body ng-app ="app">
 	<!-- header -->
 	<header class = "container-fluid header" ng-controller="headercontroller">
 		<div class = "container">
-			<a href="#" class = "logo"> Baldepro </a>
+			<a href="#" class = "logo"> Baldepro@localhost </a>
 			<nav class = "menu">
 				<a href="#"><i class="fa fa-home" aria-hidden="true">&nbsp; Home</i></a>
 				<a href="#about"><i class="fa" aria-hidden="true"> About </i></a>
@@ -32,15 +32,15 @@
 		</div>
 	</header>
 	<!-- end header -->
-	
+
 	<!-- banner -->
 	<section class ="container-fluid banner">
 		<div class ="ban">
-			<img src="../images/ban.jpg" alt ="banner of the site">			
+			<img src="../images/ban.jpg" alt ="banner of the site">
 		</div>
 	</section>
 	<!-- end banner -->
-	
+
 	<!-- about -->
 	<section class ="container-fluid about" ng-controller="aboutcontroller">
 		<div class = "container">
@@ -50,7 +50,7 @@
 				<article class ="col-md-4 col-lg-4 col-xs-12 col-sm-12">
 					<h2> Studies</h2>
 					<div ng-repeat = "study in studies">
-						<span class="badge badge-primary">{{study.year}}</span> 
+						<span class="badge badge-primary">{{study.year}}</span>
 						<span class="badge badge-secondary">{{study.name}}</span>
 						<h5>{{study.school}} ({{study.city}})</h5>
 						<hr>
@@ -100,8 +100,8 @@
 		<div class="container">
 		    <h2 id="contact"> Contact me </h2>
 		    <hr class = "separator">
-		    <div class="row"> 
-		    	
+		    <div class="row">
+
 				<form class ="formualaire" ng-submit = "sendmessage()">
 			        <div class ="controls controls-row form-group">
 			        	<label for="name">Your Name</label>
@@ -112,14 +112,14 @@
 			        	<input type="email" id="email" name="email" class="form-control" placeholder="Your e-mail" ng-model="mail">
 			        </div>
 			        <div class ="form-group">
-			        	<label for="message"></label>    
+			        	<label for="message"></label>
 			            <textarea rows="5" id="message" name="message" class="form-control" placeholder="Your Message" ng-model ="message"></textarea>
 			        </div>
 			        <div class ="controls">
 			            <button id = "contact-submit" type="submit" class="btn btn-primary input-medium pull-right">Send</button>
 			        </div>
 			    </form>
-		        
+
 			</div>
 		</div>
 		<p>
